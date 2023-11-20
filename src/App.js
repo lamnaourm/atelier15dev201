@@ -7,11 +7,11 @@ import StatsBudgets from './components/StatsBudgets';
 
 function App() {
   return (
-    <div className="App">
+    <div className="container">
       <Header />
       <StatsBudgets />
-      <div>
-        <div>
+      <div className='details'>
+        <div className='add'>
           <AddBudgets />
           <AddDepenses />
         </div>

@@ -1,0 +1,26 @@
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+}
+
+.header {
+  background-color: aliceblue;
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 1px, rgba(6, 24, 44, 0.65) 0px 2px 4px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.details {
+  display: flex;
+  height: 100%;
+}
+
+.add {
+  width: 33%;
+}
+.list {
+  width: 67%;
+}
