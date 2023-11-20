@@ -28,6 +28,9 @@ const BudgetReducer = (state = initial_state, action) => {
         case types.add_depense: 
             newState.depenses = [...newState.depenses, action.payload]
         break;
+        case types.delete_depense: 
+            newState.depenses =  newState.depenses.filter(dep => dep.id != action.payload)
+        break;
     }
 
     return newState;

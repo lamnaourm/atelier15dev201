@@ -1,9 +1,12 @@
 import React from 'react'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
+import { MdDelete } from "react-icons/md";
+import { deletedepense } from '../redux/ActionsCreators';
 
 export default function ListDepenses() {
 
     const depenses = useSelector(state => state.depenses)
+    const dispatch = useDispatch()
 
   return (
     <div className='list'>
@@ -13,6 +16,7 @@ export default function ListDepenses() {
                 <tr>
                     <th>Titre</th>
                     <th>Montant</th>
+                    <th>Actions</th>
                 </tr>
             </thead>
             <tbody>
@@ -21,6 +25,7 @@ export default function ListDepenses() {
                     <tr key={dep.id}>
                         <td>{dep.title}</td>
                         <td>{dep.price}</td>
+                        <td><button onClick={() => dispatch(deletedepense(dep.id))}><MdDelete /></button></td>
                     </tr>
                     )
             }

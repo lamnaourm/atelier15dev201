@@ -1,5 +1,8 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
+import { FaMoneyBill } from "react-icons/fa6";
+import { SiExpensify } from "react-icons/si";
+import { FaScaleBalanced } from "react-icons/fa6";
 
 export default function StatsBudgets() {
 
@@ -10,14 +13,17 @@ export default function StatsBudgets() {
     return (
         <div className='stats'>
             <div>
+                <FaMoneyBill />
                 BUDGET : {budget}
             </div>
 
             <div>
+                <SiExpensify />
                 DEPENSES : {som}
             </div>
 
             <div>
+                <FaScaleBalanced/>
                 ECART : {budget - som}
             </div>
 

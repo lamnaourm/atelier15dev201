@@ -14,3 +14,10 @@ export const addepense = (titre, montant) => {
         payload: {id:uuid(), title:titre, price:montant}
     }
 }
+
+export const deletedepense = (id) => {
+    return {
+        type:types.delete_depense,
+        payload: id
+    }
+}

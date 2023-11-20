@@ -34,6 +34,9 @@
 .stats {
   display: flex;
   justify-content: space-around;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 30px;
 }
 
 .add  div {
@@ -51,4 +54,15 @@ table {
 
 table td, table th {
   border: 1px solid #000;
+}
+
+.stats div {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 2px solid #000;
+  align-items: center;
+  gap: 20px;
+  background-color: beige;
+  border-radius: 5px;
 }
