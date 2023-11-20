@@ -1,7 +1,7 @@
 import uuid from "react-uuid";
 
 const initial_state = {
-    budget: 0,
+    budget: 2000,
     depenses: [
         {
             id:uuid(),

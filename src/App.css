@@ -3,6 +3,7 @@
   display: grid;
   grid-template-rows: auto auto 1fr;
   gap: 10px;
+  background-color: azure;
 }
 
 .header {
@@ -25,4 +26,9 @@
 }
 .list {
   width: 67%;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
 }
