@@ -1,3 +1,4 @@
+import uuid from 'react-uuid'
 import * as types from './ActionsTypes'
 
 export const addbudget = (montant) => {
@@ -7,9 +8,9 @@ export const addbudget = (montant) => {
     }
 }
 
-export const addepense = (depense) => {
+export const addepense = (titre, montant) => {
     return {
         type:types.add_depense,
-        payload: depense
+        payload: {id:uuid(), title:titre, price:montant}
     }
 }
